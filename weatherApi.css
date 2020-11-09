@@ -314,10 +314,14 @@ body, html {
                 .min-max, hu-pr {  
                     font-size: 12px;
                 }
-
+		.humidity, .pressure {
+                    display: flex;
+                    align-items: center;
+            }
+		
 		.humidity img , .pressure img{
-                     width: 15px;
-                     height: 15px;
+                     width: 10px;
+                     height: 10px;
             	}
             .weather__description {
                 font-size: 25px;
