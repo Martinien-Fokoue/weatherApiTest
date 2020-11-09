@@ -193,6 +193,7 @@ body {
                 display: grid;
                 grid-template-rows: 3fr .5fr .5fr;
                 background-color: rgba(0, 0, 0, .3);
+                color: #fff;
             }
             .temp {
                 text-align: center;
@@ -267,7 +268,7 @@ body {
 @media screen and (max-width : 700px){
     
 body, html {
-    min-height: 120vh;
+    min-height: 110vh;
 }
 .container {
     width: 95%;
@@ -281,6 +282,7 @@ body, html {
     }
         .section_1 {
             width: 100%;
+            padding: 5px;
         }
                 .city__infos .city__name {
                     font-size: 40px;
@@ -295,14 +297,22 @@ body, html {
                 
 
         .section_2 {
-            padding: 5px;
+            padding: 0px;
+        }
+
+        .section_2_container {
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr .5Fr;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
         }
             
                 .temp__{
-                    font-size: 13vh;
+                    font-size: 12vh;
                 }
                 .min-max {  
-                    font-size: 14px;
+                    font-size: 13px;
                 }
             .weather__description {
                 font-size: 25px;
