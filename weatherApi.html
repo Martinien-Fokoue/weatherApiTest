@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="weatherApi.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <style>
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">weather API</div>
+    </header>
+
+    <div class="container">
+
+        <form class="form">
+            <div class="field__input">
+                <input type="text" name="input__search" id="input__search" autocomplete="off" placeholder="Enter a city here to see the weather">
+                <button class="btn">
+                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="#000" role="img" class="icon fill-current search-icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6002 12.0498C9.49758 12.8568 8.13777 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667C13.3333 8.15637 12.8447 9.53194 12.019 10.6419C12.0265 10.6489 12.0338 10.656 12.0411 10.6633L15.2935 13.9157C15.6841 14.3063 15.6841 14.9394 15.2935 15.33C14.903 15.7205 14.2699 15.7205 13.8793 15.33L10.6269 12.0775C10.6178 12.0684 10.6089 12.0592 10.6002 12.0498ZM11.3333 6.66667C11.3333 9.244 9.244 11.3333 6.66667 11.3333C4.08934 11.3333 2 9.244 2 6.66667C2 4.08934 4.08934 2 6.66667 2C9.244 2 11.3333 4.08934 11.3333 6.66667Z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="autocomplete"></div>
+        </form>
+
+        <div class="results">
+            <div class="eror">404</div>
+            <div class="section_1">
+
+                <div class="data__results">
+                    <div class="city__infos">
+                        <!-- <svg class="localisation__icon" version="1.1" id="Capa_1"  x="0px" y="0px" width="38px" height="38px" viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;" xml:space="preserve">
+                            <g><path d="M19,0C11.096,0,4.666,6.43,4.666,14.333c0,11.379,12.796,22.81,13.341,23.292C18.292,37.875,18.646,38,19,38 c0.368,0,0.736-0.135,1.023-0.404c0.543-0.508,13.311-12.568,13.311-23.262C33.334,6.431,26.902,0,19,0z M19,21.168 c-3.775,0-6.834-3.061-6.834-6.833S15.225,7.502,19,7.502c3.773,0,6.832,3.06,6.832,6.833S22.773,21.168,19,21.168z"/></g>
+                        </svg> -->
+                        <span class="city__name">...</span>
+                    </div>
+                    <span class="dates">
+                        <span class="date">...</span>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="section_2">
+
+                <div class="section_2_container">
+                    <div class="temp"> 
+                        <div class="temp__">...</div>
+                        <div class="min-max">
+                            <div class="temp__min">...</div>
+                            <div class="temp__max">...</div>
+                        </div> 
+                        <div class="hu-pr">
+                            <span class="humidity">...</span>
+                            <span class="pressure">...</span>
+                        </div>
+                     </div>
+                    <div class="weather">
+                        <span class="weather__description">...</span>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/callAjax.js"></script>
+    <script src="js/weatherApi.js"></script>
+</body>
+</html>
