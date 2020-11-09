@@ -268,7 +268,7 @@ body {
 @media screen and (max-width : 700px){
     
 body, html {
-    min-height: 120vh;
+    min-height: 130vh;
 }
 .container {
     width: 95%;
@@ -311,7 +311,7 @@ body, html {
                 .temp__{
                     font-size: 12vh;
                 }
-                .min-max, hu_pr {  
+                .min-max, hu-pr {  
                     font-size: 12px;
                 }
             .weather__description {
