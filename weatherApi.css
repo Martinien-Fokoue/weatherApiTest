@@ -267,7 +267,7 @@ body {
 @media screen and (max-width : 700px){
     
 body, html {
-    min-height: 1200vh;
+    min-height: 120vh;
 }
 .container {
     width: 95%;
